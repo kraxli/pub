@@ -80,6 +80,16 @@ The main refrence is [severalines blog](https://severalnines.com/blog/postgresql
 
 # Useful commands
 
+## Dump and restore schema
+This can be used to take schema backup
+```sh
+pg_dump -U UserName -h HostName -s DBName > "file.sql"
+# This can be used to restore the DB
+psql -d DBName -h HostName -U UserName <  "file.sql"
+```
+
+
+# Footnotes
 
 [^1]: In the Postgresql world, the term “schema” is maybe somewhat unfortunately overloaded. In the broader context of relational database management systems (RDBMS), the term “schema” might be understood to refer to the overall logical or physical design of the database, i.e., the definition of all the tables, columns, views, and other objects that constitute the database definition. In that broader context a schema might be expressed in an entity-relationship (ER) diagram or a script of data definition language (DDL) statements used to instantiate the application database.
 
