@@ -98,8 +98,6 @@ psql -d DBName -h HostName -U UserName <  "file.sql"
 \dt schema1. - List tables inside particular schemas. For eg: 'schema1'.
 ```
 
-
-
 # Footnotes
 
 [^1]: In the Postgresql world, the term “schema” is maybe somewhat unfortunately overloaded. In the broader context of relational database management systems (RDBMS), the term “schema” might be understood to refer to the overall logical or physical design of the database, i.e., the definition of all the tables, columns, views, and other objects that constitute the database definition. In that broader context a schema might be expressed in an entity-relationship (ER) diagram or a script of data definition language (DDL) statements used to instantiate the application database.
